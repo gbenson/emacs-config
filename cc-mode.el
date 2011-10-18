@@ -34,3 +34,10 @@
   (define-key c-mode-base-map "\C-xc" 'c-switch-c-h))
 
 (add-hook 'c-mode-common-hook 'gary-c-mode-common-hook)
+
+;; Define function to initialize Java mode
+(defun gary-java-mode-hook ()
+  "Apply various settings when in Java mode"
+  (setq c-basic-offset 4))
+
+(add-hook 'java-mode-hook 'gary-java-mode-hook)

@@ -12,6 +12,10 @@
  '(tool-bar-mode nil nil (tool-bar))
  '(tooltip-mode nil nil (tooltip)))
  
+(if (eq window-system 'x)
+    (custom-set-variables
+     '(show-trailing-whitespace t)))
+
 ;; Set my email address for things that want it.
 (custom-set-variables
  '(user-mail-address "gary@inauspicious.org" t)
@@ -56,6 +60,6 @@
 	'("\\.gmk"  . makefile-mode))
        auto-mode-alist))
 
-(setq-default indent-tabs-mode nil)
+;(setq-default indent-tabs-mode nil)
 
 (setq inhibit-splash-screen t)
