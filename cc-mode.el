@@ -38,6 +38,6 @@
 ;; Define function to initialize Java mode
 (defun gary-java-mode-hook ()
   "Apply various settings when in Java mode"
-  (setq c-basic-offset 4))
+  (setq c-basic-offset 2))
 
 (add-hook 'java-mode-hook 'gary-java-mode-hook)
