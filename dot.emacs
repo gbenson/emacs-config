@@ -63,3 +63,5 @@
 ;(setq-default indent-tabs-mode nil)
 
 (setq inhibit-splash-screen t)
+
+(setq js-indent-level 2)
