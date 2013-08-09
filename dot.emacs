@@ -14,7 +14,8 @@
  
 (if (eq window-system 'x)
     (custom-set-variables
-     '(show-trailing-whitespace t)))
+     '(show-trailing-whitespace t)
+     '(safe-local-variable-values (quote ((show-trailing-whitespace))))))
 
 ;; Set my email address for things that want it.
 (custom-set-variables
