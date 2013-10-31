@@ -10,8 +10,9 @@
  '(line-number-mode t)
  '(blink-cursor nil)
  '(tool-bar-mode nil nil (tool-bar))
- '(tooltip-mode nil nil (tooltip)))
- 
+ '(tooltip-mode nil nil (tooltip))
+ '(compilation-scroll-output 1))
+
 (if (eq window-system 'x)
     (custom-set-variables
      '(show-trailing-whitespace t)
