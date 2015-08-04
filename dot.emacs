@@ -55,6 +55,10 @@
 ;; Configure `xsl-mode' -- XSL files
 (load-file "~/.el/xslide.el")
 
+;; Configure `outline-mode'
+(load-file "~/.el/outline-mode.el")
+
+
 (setq auto-mode-alist
       (append
        (list
