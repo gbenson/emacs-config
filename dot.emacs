@@ -58,6 +58,9 @@
 ;; Configure `outline-mode'
 (load-file "~/.el/outline-mode.el")
 
+;; Configure `i8-mode'
+(load-file "~/.el/i8-mode.el")
+
 
 (setq auto-mode-alist
       (append
@@ -71,3 +74,5 @@
 (setq inhibit-splash-screen t)
 
 (setq js-indent-level 2)
+
+(set-scroll-bar-mode 'left)
