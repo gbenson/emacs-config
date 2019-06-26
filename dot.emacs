@@ -5,13 +5,28 @@
 
 ;; Configure the basic appearance of the frames
 (custom-set-variables
- '(frame-title-format "%b")
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(blink-cursor-mode nil)
+ '(c-default-style "gnu")
  '(column-number-mode t)
+ '(compilation-scroll-output 1)
+ '(default-major-mode (quote text-mode) t)
+ '(enable-local-variables t)
+ '(font-lock-global-modes t)
+ '(frame-title-format "%b" t)
+ '(global-font-lock-mode t nil (font-lock))
  '(line-number-mode t)
- '(blink-cursor nil)
+ '(mouse-wheel-mode t nil (mwheel))
+ '(query-user-mail-address nil)
+ '(safe-local-variable-values (quote ((eval c-set-offset (quote innamespace) 0) (show-trailing-whitespace))))
+; '(show-trailing-whitespace t)
  '(tool-bar-mode nil nil (tool-bar))
  '(tooltip-mode nil nil (tooltip))
- '(compilation-scroll-output 1))
+ '(user-mail-address "gary@inauspicious.org")
+ '(enable-local-variables nil))
 
 (if (eq window-system 'x)
     (custom-set-variables
@@ -19,17 +34,13 @@
      '(safe-local-variable-values (quote ((show-trailing-whitespace))))))
 
 ;; Set my email address for things that want it.
-(custom-set-variables
- '(user-mail-address "gary@inauspicious.org" t)
- '(query-user-mail-address nil))
+
 
 ;; Make the default major mode be text-mode
-(custom-set-variables
- '(default-major-mode 'text-mode))
+
 
 ;; Enable wheelmouse support by default
-(custom-set-variables
- '(mouse-wheel-mode t nil (mwheel)))
+
 
 ;; Make CTRL-Z undo (instead of iconifying)
 (global-set-key "\C-z" 'undo)
@@ -76,3 +87,28 @@
 (setq js-indent-level 2)
 
 (set-scroll-bar-mode 'left)
+(if (eq window-system 'x)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:background "#E3E3EE"))))
+ '(font-lock-builtin-face ((t (:foreground "blue4"))))
+ '(font-lock-comment-face ((t (:foreground "#a57700" :italic t))))
+ '(font-lock-constant-face ((t (:foreground "red3"))))
+ '(font-lock-function-name-face ((t (:foreground "blue3"))))
+ '(font-lock-keyword-face ((t (:foreground "purple4"))))
+ '(font-lock-string-face ((t (:foreground "green4"))))
+ '(font-lock-type-face ((t (:foreground "magenta4"))))
+ '(font-lock-variable-name-face ((t (:foreground "blue3"))))
+ '(header-line ((t (:inherit mode-line))))
+ '(menu ((t (:background "#D6D6D6"))))
+ '(mode-line ((t (:background "#C5C5C5" :foreground "black" :box (:line-width -1 :style released-button)))))
+ '(rpm-spec-dir-face ((t (:foreground "green4"))) t)
+ '(rpm-spec-doc-face ((t (:foreground "magenta4"))) t)
+ '(rpm-spec-macro-face ((t (:foreground "purple4"))) t)
+ '(rpm-spec-package-face ((t (:foreground "red3"))) t)
+ '(scroll-bar ((t (:background "#D6D6D6"))))
+ '(sh-heredoc-face ((t (:foreground "grey40"))) t))
+)
