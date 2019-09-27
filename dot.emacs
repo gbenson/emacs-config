@@ -86,7 +86,9 @@
 
 (setq js-indent-level 2)
 
-(set-scroll-bar-mode 'left)
+(if (eq window-system 'x)
+    (set-scroll-bar-mode 'left))
+
 (if (eq window-system 'x)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
