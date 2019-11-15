@@ -85,6 +85,7 @@
 (setq inhibit-splash-screen t)
 
 (setq js-indent-level 2)
+(setq lua-indent-level 2)
 
 (if (eq window-system 'x)
     (set-scroll-bar-mode 'left))
