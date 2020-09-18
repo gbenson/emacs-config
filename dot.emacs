@@ -25,8 +25,7 @@
 ; '(show-trailing-whitespace t)
  '(tool-bar-mode nil nil (tool-bar))
  '(tooltip-mode nil nil (tooltip))
- '(user-mail-address "gary@inauspicious.org")
- '(enable-local-variables nil))
+ '(user-mail-address "gary@inauspicious.org"))
 
 (if (eq window-system 'x)
     (custom-set-variables
