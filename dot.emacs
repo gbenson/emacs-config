@@ -13,7 +13,7 @@
  '(c-default-style "gnu")
  '(column-number-mode t)
  '(compilation-scroll-output 1)
- '(default-major-mode (quote text-mode) t)
+ '(default-major-mode 'text-mode t)
  '(enable-local-variables t)
  '(font-lock-global-modes t)
  '(frame-title-format "%b" t)
@@ -21,8 +21,8 @@
  '(line-number-mode t)
  '(mouse-wheel-mode t nil (mwheel))
  '(query-user-mail-address nil)
- '(safe-local-variable-values (quote ((eval c-set-offset (quote innamespace) 0) (show-trailing-whitespace))))
-; '(show-trailing-whitespace t)
+ '(safe-local-variable-values '((show-trailing-whitespace)))
+ '(show-trailing-whitespace t)
  '(tool-bar-mode nil nil (tool-bar))
  '(tooltip-mode nil nil (tooltip))
  '(user-mail-address "gary@inauspicious.org"))
@@ -71,6 +71,13 @@
 ;; Configure `i8-mode'
 (load-file "~/.el/i8-mode.el")
 
+;; Configure `sh-mode'
+(setq sh-basic-offset 2)
+
+;; Configure `javascript-mode'
+(defun disable-tabs ()
+  (setq indent-tabs-mode nil))
+(add-hook 'js-mode-hook 'disable-tabs)
 
 (setq auto-mode-alist
       (append
