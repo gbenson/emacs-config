@@ -25,7 +25,7 @@
  '(show-trailing-whitespace t)
  '(tool-bar-mode nil nil (tool-bar))
  '(tooltip-mode nil nil (tooltip))
- '(user-mail-address "gary@inauspicious.org"))
+ '(user-mail-address "gary@gbenson.net"))
 
 (if (eq window-system 'x)
     (custom-set-variables
