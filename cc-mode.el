@@ -1,4 +1,4 @@
-;;; ~/.el/cc-mode.el
+;;; ~/.emacs.config/cc-mode.el
 ;;; $Revision: 1.2 $
 ;;;
 ;;; Configure `cc-mode' - C, C++, ObjC and Java files

@@ -1,4 +1,4 @@
-;;; ~/.el/font-lock.el
+;;; ~/.emacs.config/font-lock.el
 ;;; $Revision: 1.4 $
 ;;;
 ;;; Set up `rpm-mode' - rpm spec file mode

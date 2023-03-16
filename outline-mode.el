@@ -1,4 +1,4 @@
-;;; ~/.el/outline-mode.el
+;;; ~/.emacs.config/outline-mode.el
 ;;;
 ;; Configure `outline-mode'
 ;;;

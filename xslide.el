@@ -1,4 +1,4 @@
-(setq load-path (append load-path '("~/.el/xslide-0.2.2")))
+(setq load-path (append load-path '("~/.emacs.config/xslide-0.2.2")))
 
 ;; $Id: dot_emacs,v 1.1.1.1 2001/08/22 21:02:10 menteith Exp $
 
