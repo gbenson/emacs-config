@@ -54,22 +54,22 @@
 ;;;
 
 ;; Configure `text-mode' -- human readable text files
-(load-file "~/.emacs.config/text-mode.el")
+(load-file "~/.emacs-config/text-mode.el")
 
 ;; Configure `font-lock-mode' -- syntax highlighting
-(load-file "~/.emacs.config/font-lock.el")
+(load-file "~/.emacs-config/font-lock.el")
 
 ;; Configure `cc-mode' -- C, C++, ObjC and Java files
-(load-file "~/.emacs.config/cc-mode.el")
+(load-file "~/.emacs-config/cc-mode.el")
 
 ;; Configure `xsl-mode' -- XSL files
-(load-file "~/.emacs.config/xslide.el")
+(load-file "~/.emacs-config/xslide.el")
 
 ;; Configure `outline-mode'
-(load-file "~/.emacs.config/outline-mode.el")
+(load-file "~/.emacs-config/outline-mode.el")
 
 ;; Configure `i8-mode'
-(load-file "~/.emacs.config/i8-mode.el")
+(load-file "~/.emacs-config/i8-mode.el")
 
 ;; Configure `sh-mode'
 (setq sh-basic-offset 2)

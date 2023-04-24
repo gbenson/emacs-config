@@ -1,4 +1,4 @@
-;;; ~/.emacs.config/text-mode.el
+;;; ~/.emacs-config/text-mode.el
 ;;; $Revision: 1.1 $
 ;;;
 ;; Configure `text-mode' - human readable text files
