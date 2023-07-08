@@ -78,7 +78,9 @@
 (defun disable-tabs ()
   (setq indent-tabs-mode nil))
 (add-hook 'js-mode-hook 'disable-tabs)
+(setq js-indent-level 2)
 
+;; Configure `makefile-mode'
 (setq auto-mode-alist
       (append
        (list
@@ -86,12 +88,12 @@
 	'("\\.gmk"  . makefile-mode))
        auto-mode-alist))
 
+;; Configure `lua-mode'
+(setq lua-indent-level 2)
+
 ;(setq-default indent-tabs-mode nil)
 
 (setq inhibit-splash-screen t)
-
-(setq js-indent-level 2)
-(setq lua-indent-level 2)
 
 (if (eq window-system 'x)
     (set-scroll-bar-mode 'left))
