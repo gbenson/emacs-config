@@ -27,11 +27,6 @@
  '(tooltip-mode nil nil (tooltip))
  '(user-mail-address "gary@gbenson.net"))
 
-(if (eq window-system 'x)
-    (custom-set-variables
-     '(show-trailing-whitespace t)
-     '(safe-local-variable-values (quote ((show-trailing-whitespace))))))
-
 ;; Set my email address for things that want it.
 
 
