@@ -1,0 +1,3 @@
+[submodule "hcl-mode"]
+	path = hcl-mode
+	url = https://github.com/hcl-emacs/hcl-mode

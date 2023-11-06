@@ -92,6 +92,9 @@
             (setq indent-tabs-mode 1)
             (setq tab-width 4)))
 
+;; Configure `hcl-mode' (for Terraform files)
+(load-file "~/.emacs-config/terraform.el")
+
 ;(setq-default indent-tabs-mode nil)
 
 (setq inhibit-splash-screen t)
