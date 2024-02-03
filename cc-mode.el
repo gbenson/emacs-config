@@ -23,7 +23,7 @@
 ;; Define function to initialise C-mode
 ;;
 (defun gary-c-mode-common-hook ()
-  "Apply various settings when in C mode"
+  "Apply various settings when in any C mode"
   ; Turn on hungry delete
   (c-toggle-hungry-state t)
   ; Turn on auto newline
@@ -34,6 +34,13 @@
   (define-key c-mode-base-map "\C-xc" 'c-switch-c-h))
 
 (add-hook 'c-mode-common-hook 'gary-c-mode-common-hook)
+
+;; Define function to initialize C mode
+(defun gary-c-mode-hook ()
+  "Apply various settings when in C mode"
+  (setq c-basic-offset 4))
+
+(add-hook 'c-mode-hook 'gary-c-mode-hook)
 
 ;; Define function to initialize Java mode
 (defun gary-java-mode-hook ()
