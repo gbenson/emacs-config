@@ -25,7 +25,8 @@
  '(show-trailing-whitespace t)
  '(tool-bar-mode nil nil (tool-bar))
  '(tooltip-mode nil nil (tooltip))
- '(user-mail-address "gary@gbenson.net"))
+ '(user-mail-address "gary@gbenson.net")
+ '(warning-suppress-types '((comp))))
 
 ;; Set my email address for things that want it.
 
