@@ -4,7 +4,7 @@
 ;;; Configure `cc-mode' - C, C++, ObjC and Java files
 ;;;
 (custom-set-variables
- '(c-default-style "gnu"))
+ '(c-default-style "python"))
 
 
 ;; Switch buffers between C and H files
@@ -38,7 +38,8 @@
 ;; Define function to initialize C mode
 (defun gary-c-mode-hook ()
   "Apply various settings when in C mode"
-  (setq c-basic-offset 4))
+  (setq c-basic-offset 4)
+  (setq indent-tabs-mode nil))
 
 (add-hook 'c-mode-hook 'gary-c-mode-hook)
 
