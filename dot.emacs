@@ -109,7 +109,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:background "#E3E3EE"))))
+ '(default ((t (:background "#E3E3EE" :family "Liberation Mono" :foundry "1ASC" :slant normal :weight regular :height 100 :width normal))))
  '(font-lock-builtin-face ((t (:foreground "blue4"))))
  '(font-lock-comment-face ((t (:foreground "#a57700" :italic t))))
  '(font-lock-constant-face ((t (:foreground "red3"))))
